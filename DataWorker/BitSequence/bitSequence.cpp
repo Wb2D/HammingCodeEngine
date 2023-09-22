@@ -43,3 +43,11 @@ QString BitSequence::toString() const {
     }
     return result;
 }
+
+BitSequence BitSequence::subsequence(int from, int to) const {
+    BitSequence result;
+    for(int i = from; i <= to; ++i) {
+        i >= length() ? result.append(false) : result.append(*(bitArray + i));
+    }
+    return result;
+}

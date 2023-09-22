@@ -15,24 +15,20 @@ class BitSequence {
 public:
     // конструктор без параметров
     BitSequence() : bitArray(NULL), bitCount(0), arraySize(0) {}
-
     // деструктор для освобождения памяти
-    ~BitSequence() { delete[] bitArray; }
-
+    //~BitSequence() { delete[] bitArray; }
     // метод возвращает длинну битовой последовательности
     int length() const { return bitCount; }
-
     // перегрузка оператора индексации
     bool operator[](const int& index) const;
-
     // метод для установки бита с заданным индексом
     void set(const int& index, const bool& value);
-
     // метод для вставки бита в конец последовательности
     void append(const bool& value);
-
     // метод для создания строки из битовой последовательности
     QString toString() const;
+    // метод возвращает часть исходной последовательности
+    BitSequence subsequence(int from, int to) const;
 
 private:
     // метод для расширения последовательности
