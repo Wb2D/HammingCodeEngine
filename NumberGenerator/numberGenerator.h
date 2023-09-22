@@ -2,9 +2,8 @@
 #define _numberGenerator_h
 
 /*
- *
- *
- *
+ * Данный метод предназначен для генерации случайных чисел. Он способен генерировать числа
+ * с указанным числом разрядов и в заданной системе счисления.
  */
 
 #include <QString>
@@ -13,9 +12,10 @@
 
 class NumberGenerator {
 public:
+    // метод для генерации случайного числа
     static QString generate(const int &base, const int &digits);
-
 private:
+    // строка возможных символов
     static const QString arr;
 };
 
