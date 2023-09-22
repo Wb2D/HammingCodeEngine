@@ -1,4 +1,4 @@
-#include "NumberGenerator/numberGenerator.h"
+#include "DataWorker\NumberGenerator\numberGenerator.h"
 
 const QString NumberGenerator::arr = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

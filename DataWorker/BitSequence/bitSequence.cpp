@@ -1,4 +1,4 @@
-#include "BitSequence/bitSequence.h"
+#include "DataWorker\BitSequence\bitSequence.h"
 
 void BitSequence::resize(const int& length) {
     int newLength = (length == 0) ? 1 : (length * 2);

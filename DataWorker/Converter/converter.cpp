@@ -1,4 +1,4 @@
-#include "Converter/converter.h"
+#include "DataWorker\Converter\converter.h"
 
 const QMap<char, int> Converter::charToDigit = {
     {'0', 0}, {'1', 1}, {'2', 2}, {'3', 3}, {'4', 4}, {'5', 5},

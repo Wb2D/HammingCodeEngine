@@ -8,10 +8,10 @@ CONFIG -= app_bundle
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        BitSequence/bitSequence.cpp \
-        Converter/BigInteger/BigInteger.cpp \
-        Converter/converter.cpp \
-        NumberGenerator/numberGenerator.cpp \
+        DataWorker\BitSequence\bitSequence.cpp \
+        DataWorker\Converter\BigInteger\BigInteger.cpp \
+        DataWorker\Converter\converter.cpp \
+        DataWorker\NumberGenerator\numberGenerator.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -20,7 +20,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    BitSequence/bitSequence.h \
-    Converter/BigInteger/BigInteger.h \
-    Converter/converter.h \
-    NumberGenerator/numberGenerator.h
+    DataWorker\BitSequence\bitSequence.h \
+    DataWorker\Converter\BigInteger\BigInteger.h \
+    DataWorker\Converter\converter.h \
+    DataWorker\NumberGenerator\numberGenerator.h \

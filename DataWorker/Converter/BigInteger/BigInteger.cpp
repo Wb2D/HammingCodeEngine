@@ -1,4 +1,4 @@
-#include "Converter/BigInteger/BigInteger.h"
+#include "DataWorker\Converter\BigInteger\BigInteger.h"
 
 QString BigInteger::toString() const {
     QString result;

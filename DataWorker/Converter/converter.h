@@ -13,8 +13,8 @@
 #include <QtMath>
 #include <QDebug>
 
-#include "BitSequence/bitSequence.h"
-#include "Converter/BigInteger/BigInteger.h"
+#include "DataWorker\BitSequence\bitSequence.h"
+#include "DataWorker\Converter\BigInteger\BigInteger.h"
 
 class Converter {
 public:

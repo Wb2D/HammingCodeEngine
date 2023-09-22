@@ -1,9 +1,9 @@
 #include <iostream>
 #include <QDebug>
 
-#include "BitSequence/bitSequence.h"
-#include "Converter/converter.h"
-#include "NumberGenerator/numberGenerator.h"
+#include "DataWorker/BitSequence/bitSequence.h"
+#include "DataWorker/Converter/converter.h"
+#include "DataWorker/NumberGenerator/numberGenerator.h"
 
 int main() {
     BitSequence test;
@@ -16,7 +16,3 @@ int main() {
 
     return 0;
 }
-
-/*
- * это тестовый комментарий для гит
- */
