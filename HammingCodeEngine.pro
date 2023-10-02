@@ -13,6 +13,7 @@ SOURCES += \
         DataWorker\Converter\BigInteger\BigInteger.cpp \
         DataWorker\Converter\converter.cpp \
         DataWorker\NumberGenerator\numberGenerator.cpp \
+        Encoder/HammingCode/Encoder1511/encoder1511.cpp \
         Encoder/HammingCode/Encoder74/Encoder74.cpp \
         main.cpp
 
@@ -27,4 +28,5 @@ HEADERS += \
     DataWorker\Converter\BigInteger\BigInteger.h \
     DataWorker\Converter\converter.h \
     DataWorker\NumberGenerator\numberGenerator.h \
+    Encoder/HammingCode/Encoder1511/encoder1511.h \
     Encoder/HammingCode/Encoder74/Encoder74.h
