@@ -7,6 +7,8 @@
 
 #include <QVector>
 #include <QtGlobal>
+#include <QString>
+#include <QDebug>
 
 class BigInteger {
 public:
@@ -38,6 +40,15 @@ public:
 
     // метод проверяющий является ли число нулем
     bool isZero() const;
+
+    // метод для добавления цифры в число
+    void append(const int &digit);
+
+    // перегрущка оператора индексации
+    int operator[](const int& index) const;
+
+    // метод возвращает число цифр в числе
+    int length() const;
 
 private:
     // метод для удаления незначащих нулей

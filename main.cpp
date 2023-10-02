@@ -7,6 +7,7 @@
 #include "DataWorker/EncodedBitSequence/encodedBitSequence.h"
 
 #include "Encoder/HammingCode/Encoder74/Encoder74.h"
+#include "Encoder/HammingCode/Encoder84/encoder84.h"
 #include "Encoder/HammingCode/Encoder1511/encoder1511.h"
 #include "Encoder/HammingCode/Encoder1611/encoder1611.h"
 

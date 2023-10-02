@@ -77,3 +77,19 @@ bool BigInteger::isEven() const {
 bool BigInteger::isZero() const {
     return (data.size() == 1 && data[0] == 0);
 }
+
+void BigInteger::append(const int &digit) {
+    data.push_back(digit);
+}
+
+int BigInteger::operator[](const int& index) const {
+    if (index < 0 || index > data.size()) {
+        qWarning() << "ERROR : BitSequence -> bitsArray -> (index out of range)";
+        return -1;
+    }
+    return data.at(index);
+}
+
+int BigInteger::length() const {
+    return data.size();
+}

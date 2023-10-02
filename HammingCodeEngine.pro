@@ -17,6 +17,7 @@ SOURCES += \
         Encoder/HammingCode/Encoder1611/encoder1611.cpp \
         Encoder/HammingCode/Encoder74/Encoder74.cpp \
         Encoder/HammingCode/Encoder84/encoder84.cpp \
+        Encoder/HammingCode/EncoderDecimal1511/encoderDecimal1511.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -33,4 +34,5 @@ HEADERS += \
     Encoder/HammingCode/Encoder1511/encoder1511.h \
     Encoder/HammingCode/Encoder1611/encoder1611.h \
     Encoder/HammingCode/Encoder74/Encoder74.h \
-    Encoder/HammingCode/Encoder84/encoder84.h
+    Encoder/HammingCode/Encoder84/encoder84.h \
+    Encoder/HammingCode/EncoderDecimal1511/encoderDecimal1511.h
