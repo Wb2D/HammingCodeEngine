@@ -14,7 +14,9 @@ SOURCES += \
         DataWorker\Converter\converter.cpp \
         DataWorker\NumberGenerator\numberGenerator.cpp \
         Encoder/HammingCode/Encoder1511/encoder1511.cpp \
+        Encoder/HammingCode/Encoder1611/encoder1611.cpp \
         Encoder/HammingCode/Encoder74/Encoder74.cpp \
+        Encoder/HammingCode/Encoder84/encoder84.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -29,4 +31,6 @@ HEADERS += \
     DataWorker\Converter\converter.h \
     DataWorker\NumberGenerator\numberGenerator.h \
     Encoder/HammingCode/Encoder1511/encoder1511.h \
-    Encoder/HammingCode/Encoder74/Encoder74.h
+    Encoder/HammingCode/Encoder1611/encoder1611.h \
+    Encoder/HammingCode/Encoder74/Encoder74.h \
+    Encoder/HammingCode/Encoder84/encoder84.h

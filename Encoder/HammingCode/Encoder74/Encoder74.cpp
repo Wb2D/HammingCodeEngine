@@ -4,10 +4,10 @@ EncodedBitSequence Encoder74::start(const BitSequence &data) {
     BitSequence eData;
     int eSize = data.length();
     // если длинна битовой последовательности не кратна 4
-    if(eSize % 4) {
+    if (eSize % 4) {
         eSize += 4 - (eSize % 4);
     }
-    for(int i = 0; i < eSize; i +=4) {
+    for (int i = 0; i < eSize; i +=4) {
         encode(data.subsequence(i, i + 3), eData);
     }
     return EncodedBitSequence(eData, "H74", 0, eSize / 4);
