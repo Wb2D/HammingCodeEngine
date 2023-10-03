@@ -17,7 +17,7 @@
 */
 
 #include "DataWorker/BitSequence/bitSequence.h"
-#include "DataWorker/EncodedBitSequence/encodedBitSequence.h"
+#include "DataWorker/BitSequence/EncodedBitSequence/encodedBitSequence.h"
 
 class Encoder1511 {
 public:

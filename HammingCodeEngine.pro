@@ -8,7 +8,8 @@ CONFIG -= app_bundle
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        DataWorker/EncodedBitSequence/encodedBitSequence.cpp \
+        DataWorker/BitSequence/EncodedBitSequence/encodedBitSequence.cpp \
+        DataWorker/Converter/BigInteger/EncodedBigInteger/encodedBigInteger.cpp \
         DataWorker\BitSequence\bitSequence.cpp \
         DataWorker\Converter\BigInteger\BigInteger.cpp \
         DataWorker\Converter\converter.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
         Encoder/HammingCode/Encoder74/Encoder74.cpp \
         Encoder/HammingCode/Encoder84/encoder84.cpp \
         Encoder/HammingCode/EncoderDecimal1511/encoderDecimal1511.cpp \
+        Encoder/HammingCode/EncoderDecimal1611/encoderDecimal1611.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -26,7 +28,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    DataWorker/EncodedBitSequence/encodedBitSequence.h \
+    DataWorker/BitSequence/EncodedBitSequence/encodedBitSequence.h \
+    DataWorker/Converter/BigInteger/EncodedBigInteger/encodedBigInteger.h \
     DataWorker\BitSequence\bitSequence.h \
     DataWorker\Converter\BigInteger\BigInteger.h \
     DataWorker\Converter\converter.h \
@@ -35,4 +38,5 @@ HEADERS += \
     Encoder/HammingCode/Encoder1611/encoder1611.h \
     Encoder/HammingCode/Encoder74/Encoder74.h \
     Encoder/HammingCode/Encoder84/encoder84.h \
-    Encoder/HammingCode/EncoderDecimal1511/encoderDecimal1511.h
+    Encoder/HammingCode/EncoderDecimal1511/encoderDecimal1511.h \
+    Encoder/HammingCode/EncoderDecimal1611/encoderDecimal1611.h

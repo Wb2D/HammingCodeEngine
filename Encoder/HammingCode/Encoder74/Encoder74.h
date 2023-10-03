@@ -19,9 +19,9 @@
  */
 
 #include "DataWorker/BitSequence/bitSequence.h"
-#include "DataWorker/EncodedBitSequence/encodedBitSequence.h"
+#include "DataWorker/BitSequence/EncodedBitSequence/encodedBitSequence.h"
 
-class Encoder74 {
+class Encoder74  {
 public:
     // метод, в котором битовая последовательность разбивается и каждая часть кодируется
     static EncodedBitSequence start(const BitSequence &data);

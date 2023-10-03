@@ -50,6 +50,8 @@ public:
     // метод возвращает число цифр в числе
     int length() const;
 
+    // метод возвращает последовательность цифр числа
+    BigInteger subdigit(const int &from, const int &to) const;
 private:
     // метод для удаления незначащих нулей
     void removeZeros();

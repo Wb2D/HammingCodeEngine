@@ -1,4 +1,4 @@
-#include "DataWorker/EncodedBitSequence/encodedBitSequence.h"
+#include "DataWorker/BitSequence/EncodedBitSequence/encodedBitSequence.h"
 
 const QString EncodedBitSequence::toString() const {
     return QString("Encoded sequency: " + data.toString() + ", Method: " +

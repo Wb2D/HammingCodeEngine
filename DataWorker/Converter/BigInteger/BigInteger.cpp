@@ -93,3 +93,16 @@ int BigInteger::operator[](const int& index) const {
 int BigInteger::length() const {
     return data.size();
 }
+
+BigInteger BigInteger::subdigit(const int &from, const int &to) const {
+    BigInteger result;
+    for (int i = from; i <= to; ++i) {
+        if (i  >= this->length()) {
+            result.append(0);
+        }
+        else {
+            result.append(this->data.at(i));
+        }
+    }
+    return result;
+}
